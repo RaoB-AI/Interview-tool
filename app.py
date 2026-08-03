@@ -4,7 +4,7 @@ from streamlit_js_eval import streamlit_js_eval
 
 # Setting up the Streamlit page configuration
 st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="📟")
-st.title("Sogeti Chatbot")
+st.title("Chatbot")
 
 # Initialize session state variables
 if "setup_complete" not in st.session_state:
@@ -74,8 +74,8 @@ if not st.session_state.setup_complete:
 
     st.session_state["company"] = st.selectbox(
         "Select a Company",
-        ("Microsoft", "Sogeti", "Cap Gemini", "Google", "Star Bucks"),
-        index=("Microsoft", "Sogeti", "Cap Gemini", "Google", "Star Bucks").index(st.session_state["company"])
+        ("Amazon", "Sogeti", "Udemy", "CapGemini", "Microsoft", "LinkedIn", "Spotify"),
+        index=("Amazon", "Sogeti", "Udemy", "CapGemini", "Microsoft", "LinkedIn", "Spotify").index(st.session_state["company"])
     )
 
 
