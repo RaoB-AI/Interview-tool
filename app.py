@@ -142,7 +142,7 @@ if st.session_state.setup_complete and not st.session_state.feedback_shown and n
             st.session_state.user_message_count += 1
 
     # Check if the user message count reaches 5
-    if st.session_state.user_message_count >= 5:
+    if st.session_state.user_message_count >= 2:
         st.session_state.chat_complete = True
 
 # Show "Get Feedback" 
