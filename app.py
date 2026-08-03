@@ -4,7 +4,7 @@ from streamlit_js_eval import streamlit_js_eval
 
 # Setting up the Streamlit page configuration
 st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="📟")
-st.title("Chatbot")
+st.title("Sogeti Chatbot")
 
 # Initialize session state variables
 if "setup_complete" not in st.session_state:
